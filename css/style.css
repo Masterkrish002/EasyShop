@@ -204,7 +204,7 @@ section{
     
 }
 .header .shoppiing-cart::-webkit-scrollbar{
-    display: none
+    display: none;
 }
 .header .shopping-cart h1{
     text-align: center;
@@ -336,7 +336,7 @@ section{
    margin-top: 10rem;
    margin-bottom: -1rem;
     width: 100%;
-    height: 60rem;
+    height: 60vh;
     background: url(../image/banner2.png) no-repeat;
     background-position: center;
     background-size: cover; 
