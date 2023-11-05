@@ -203,7 +203,7 @@ section{
     overflow:scroll;
     
 }
-.header .shoppiing-cart::-webkit-scrollbar{
+.shopping-cart::-webkit-scrollbar{
     display: none;
 }
 .header .shopping-cart h1{
@@ -231,7 +231,7 @@ section{
     transition: all 0.3s;
 }
 .header .shopping-cart .box:hover{
-    background-color : rgba(255,255,255,0.01);
+    background-color : rgba(255,255,255,0.05);
     border-radius: 3rem;
     transform: scale(1.08);
 }
