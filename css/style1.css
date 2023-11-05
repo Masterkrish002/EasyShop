@@ -29,7 +29,7 @@
   justify-content: center;
   align-items: center;
 }
-.card .login-form #name,#name1{
+.card .login-form #name,#name1,#name2{
   display: none;
 }
 
@@ -41,7 +41,7 @@
   box-shadow: var(--box-shadow);
   padding:2rem;
   border-radius: 1.5rem;
-  background: var(--light-color);
+  background: rgb(240, 188, 110);
   text-align: center;
   transition: ease-in-out 0.4s;
 }
@@ -75,11 +75,11 @@ padding:.5rem 0;
 
 .header .login-form p a{
   
-color:var(--green);
+color:var(--orange);
 text-decoration: underline;
 }
 .header .login-form p a:hover{
-  color:var(--lightgreen);
+  color:orangered;
 }
 .login-form .btn,.btn1{
   width: 10rem;
@@ -89,7 +89,7 @@ border: none;
 transition: ease-in-out 0.3s;
 }
 .login-form .btn:hover,.btn1:hover {
-background-color: var(--green);
+background-color: var(--orange);
 color: #eee;
 cursor: pointer;
 box-shadow: .1px .2px 8px black;
@@ -124,7 +124,7 @@ box-shadow: .1px .2px 8px black;
   transition: ease-in-out 0.3s;
 }
 .login-form .forget-btn:hover {
-  background-color: var(--green);
+  background-color: var(--orange);
   color: #eee;
   cursor: pointer;
   box-shadow: .1px .2px 5px black;
