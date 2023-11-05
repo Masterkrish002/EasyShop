@@ -231,7 +231,7 @@ section{
     transition: all 0.3s;
 }
 .header .shopping-cart .box:hover{
-    background-color : rgba(0,0,0,0.1);
+    background-color : rgba(255,255,255,0.01);
     border-radius: 3rem;
     transform: scale(1.08);
 }
