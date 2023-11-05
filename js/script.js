@@ -92,7 +92,7 @@ function prod1(){
 
   var b=document.querySelector('.content1 .price span');
   var valprice=parseFloat(b.innerHTML);
-  b.innerHTML=(valprice+4.99);
+  b.innerHTML=(valprice+4);
   sum=sum+b.innerHTML;
 }
 function trash1(){
@@ -106,7 +106,7 @@ function trash1(){
     b.innerHTML=0;
   }
   else{
-    b.innerHTML=valprice- 4.99;
+    b.innerHTML=valprice- 4;
   }
  
   }
@@ -122,7 +122,7 @@ function prod2(){
 
   var b=document.querySelector('.content2 .price span');
   var valprice=parseFloat(b.innerHTML);
-  b.innerHTML=valprice+4.99;
+  b.innerHTML=valprice+4;
   sum=sum+b.innerHTML;
 }
 function trash2(){
@@ -136,7 +136,7 @@ function trash2(){
     b.innerHTML=0;
   }
   else{
-    b.innerHTML=valprice- 4.99;
+    b.innerHTML=valprice- 4;
   }
  
   }
@@ -152,7 +152,7 @@ function prod3(){
 
   var b=document.querySelector('.content3 .price span');
   var valprice=parseFloat(b.innerHTML);
-  b.innerHTML=valprice+4.99;
+  b.innerHTML=valprice+4;
   sum=sum+b.innerHTML;
 }
 function trash3(){
@@ -166,7 +166,7 @@ function trash3(){
     b.innerHTML=0;
   }
   else{
-    b.innerHTML=valprice- 4.99;
+    b.innerHTML=valprice- 4;
   }
  
   }
@@ -182,7 +182,7 @@ function prod4(){
 
   var b=document.querySelector('.content4 .price span');
   var valprice=parseFloat(b.innerHTML);
-  b.innerHTML=valprice+4.99;
+  b.innerHTML=valprice+4;
  
 }
 function trash4(){
@@ -196,7 +196,7 @@ function trash4(){
     b.innerHTML=0;
   }
   else{
-    b.innerHTML=valprice- 4.99;
+    b.innerHTML=valprice- 4;
   }
  
   }
@@ -212,7 +212,7 @@ function prod5(){
 
   var b=document.querySelector('.content5 .price span');
   var valprice=parseFloat(b.innerHTML);
-  b.innerHTML=valprice+4.99;
+  b.innerHTML=valprice+4;
   
 }
 function trash5(){
@@ -227,7 +227,7 @@ function trash5(){
     b.innerHTML= 0;
   }
   else{
-    b.innerHTML=valprice- 4.99;
+    b.innerHTML=valprice- 4;
   }
  
   }
@@ -243,7 +243,7 @@ function prod6(){
 
   var b=document.querySelector('.content6 .price span');
   var valprice=parseFloat(b.innerHTML);
-  b.innerHTML=valprice+4.99;
+  b.innerHTML=valprice+4;
  
 }
 function trash6(){
@@ -257,7 +257,7 @@ function trash6(){
     b.innerHTML=0;
   }
   else{
-    b.innerHTML=valprice- 4.99;
+    b.innerHTML=valprice- 4;
   }
  
   }
@@ -273,7 +273,7 @@ function prod7(){
 
   var b=document.querySelector('.content7 .price span');
   var valprice=parseFloat(b.innerHTML);
-  b.innerHTML=valprice+4.99;
+  b.innerHTML=valprice+4;
   
 }
 function trash7(){
@@ -287,7 +287,7 @@ function trash7(){
     b.innerHTML=0;
   }
   else{
-    b.innerHTML=valprice- 4.99;
+    b.innerHTML=valprice- 4;
   }
  
   }
@@ -303,7 +303,7 @@ function prod8(){
 
   var b=document.querySelector('.content8 .price span');
   var valprice=parseFloat(b.innerHTML);
-  b.innerHTML=valprice+4.99;
+  b.innerHTML=valprice+4;
   
 }
 function trash8(){
@@ -317,7 +317,7 @@ function trash8(){
     b.innerHTML=0;
   }
   else{
-    b.innerHTML=valprice- 4.99;
+    b.innerHTML=valprice- 4;
   }
  
   }
@@ -332,4 +332,19 @@ function searchform(){
  document.querySelector('.search-form a').setAttribute('href',`#${a}`);
   
 }
- 
+
+function checkout(){
+  document.querySelector('.total').style.display= 'block';
+
+  var a=parseInt(document.querySelector('.content1 .price span').innerHTML);
+  var b=parseInt(document.querySelector('.content2 .price span').innerHTML);
+  var c=parseInt(document.querySelector('.content3 .price span').innerHTML);
+  var d=parseInt(document.querySelector('.content4 .price span').innerHTML);
+  var e=parseInt(document.querySelector('.content5 .price span').innerHTML);
+  var f=parseInt(document.querySelector('.content6 .price span').innerHTML);
+  var g=parseInt(document.querySelector('.content7 .price span').innerHTML);
+  var h=parseInt(document.querySelector('.content8 .price span').innerHTML);
+  
+  var sum=a+b+c+d+e+f+g+h;
+  document.querySelector('.total span').innerHTML = sum;
+}
